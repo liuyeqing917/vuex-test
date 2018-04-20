@@ -3,6 +3,11 @@
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     {{author}}
+    <h3>{{$store.state.count}}</h3>
+    <div>
+        <button @click="$store.commit('add')">+</button>
+        <button @click="$store.commit('reduce')">-</button>
+    </div>
     <ul>
       <li>
         <a
